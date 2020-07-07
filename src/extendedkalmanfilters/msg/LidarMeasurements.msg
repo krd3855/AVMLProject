@@ -1,0 +1,8 @@
+string sensor_type_
+float32 x_measured_
+float32 y_measured_
+uint64 time_stamp_
+float32 x_ground_truth_
+float32 y_ground_truth_
+float32 vx_ground_truth_
+float32 vy_ground_truth_
