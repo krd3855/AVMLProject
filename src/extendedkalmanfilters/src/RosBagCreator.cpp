@@ -17,7 +17,7 @@ void RosBagCreator :: read() {
   x_ground_truth, y_ground_truth, vx_ground_truth, vy_ground_truth, yaw_groundtruth, 
   yaw_rate_groundtruth, x_measured, y_measured;
 
-  std::ifstream finput(RadarDataFile);
+  std::ifstream finput(DataFile);
   std::string line;
   std::stringstream string(line);
   while (getline(finput, line)) {
