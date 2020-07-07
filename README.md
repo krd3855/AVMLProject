@@ -4,11 +4,12 @@ NOTE: THIS PROJECT WAS COMPILED ON ROS MELODIC AND UBUNTU 18.04LTS
 
 Please follow these below mentioned setps to run this code,
 
+*  Open the includes folder and find GlobalConsts.h file and find "gLidarNodeFile","gRadarNodeFile" and "DataFile" variables and put in the absoulte path of the input CSV and generated bag files.
+also, edit the launch file to  provide the absolute path for Rviz.config file inside rviz folder (ROS launch requires absolute paths ).
 *  Delete the contents of "ROSBagFiles" folder (it will be automatically populated once you run the code).
 *  Perform catkin_make and wait till the completion.
 *  Source your code by typing the following command "source devel/setup.bash".
-*  Run the rosbag creator code by typing "rosrun extendedkalmanfilters RosBagCreator", you should see the bag files created in the "ROSBagFiles" folder
-*  Open the includes folder and find GlobalConsts.h file and find "gLidarNodeFile" and "gRadarNodeFile" variables and put in the absoulte path of the generated bag files and also edit the launch file to provide the absolute path for Rviz.config file inside rviz folder (ROS launch requires absolute path).
+*  Run the rosbag creator code by typing "rosrun extendedkalmanfilters RosBagCreator", you should see the bag files created in the "ROSBagFiles" folder(Please make sure that roscore is running before you run this command, if not, it could create invalid bag files which could break the code)
 *  Perform catkkin_make again to reflect your modificatons.
 *  Type in the following command to run the code "roslaunch src/extendedkalmanfilters/launch/SensorFusion.launch" from the base "AvmlEkfWs" folder.
 *  You can open another terminal and source your code and echo the published message to look for RMS error getting published.
