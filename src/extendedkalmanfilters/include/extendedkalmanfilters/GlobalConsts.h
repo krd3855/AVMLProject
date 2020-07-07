@@ -12,8 +12,9 @@ const int gPublisherBaudRate  = 10;
 //    ********* Configuration End ********* //
 // ****************************************************************************** //
 //    ********* Bag File Path Begin ********* //
-#define gLidarNodeFile "/home/krishna/AVMLCodingHere/AvmlEkfWs/ROSBagFiles/Lidar.bag"
-#define gRadarNodeFile "/home/krishna/AVMLCodingHere/AvmlEkfWs/ROSBagFiles/Radar.bag"
+#define gLidarNodeFile "/home/krishna/Test/AVMLProject/ROSBagFiles/Lidar.bag"
+#define gRadarNodeFile "/home/krishna/Test/AVMLProject/ROSBagFiles/Radar.bag"
+constexpr char const* RadarDataFile = "../AVMLProject/InputFiles/SensorData.csv";
 //    ********* Bag File Path End ********* //
 // ****************************************************************************** //
 //    ********* Global Constants Begin ********* //
@@ -35,7 +36,6 @@ constexpr char const* gLidarBagName = "lidar";
 constexpr char const* gArgument = "readCSV";
 constexpr char const* gVizMarkerName = "/rvizFrame";
 constexpr char const* gVizNameSpace = "points_and_lines";
-constexpr char const* RadarDataFile = "../AvmlEkfWs/InputFiles/SensorData.csv";
 constexpr char const* gRadarTopicname = "/RadarData";
 //    ********* Global Constants End ********* //
 // ****************************************************************************** //
