@@ -1,0 +1,8 @@
+prefix=/home/krishna/AVMLCodingHere/CollegeGit/AVMLProject/devel
+
+Name: extendedkalmanfilters
+Description: Description of extendedkalmanfilters
+Version: 0.0.0
+Cflags: -I/home/krishna/AVMLCodingHere/CollegeGit/AVMLProject/devel/include -I/usr/include/eigen3
+Libs: -L${prefix}/lib 
+Requires: 

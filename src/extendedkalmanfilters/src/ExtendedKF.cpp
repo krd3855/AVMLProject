@@ -11,7 +11,7 @@ ExtendedKF::ExtendedKF() {
   R_laser_ << 0.0255, 0,
               0, 0.0255;
 
-  R_radar_ << 0.09, 0, 0,                             //Trail number - 15
+  R_radar_ << 0.09, 0, 0,                             //Trail number - 45
               0, 0.0009, 0,
               0, 0, 0.09;
 

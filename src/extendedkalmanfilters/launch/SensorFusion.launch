@@ -1,12 +1,10 @@
 <launch>
-   <node pkg="extendedkalmanfilters" type="LidarPublisher" name="LidarPublisher" output="screen">
-   </node>
-      <node pkg="extendedkalmanfilters" type="FusionNode" name="FusionNode" output="screen">
-   </node>
    <node pkg="extendedkalmanfilters" type="RadarPublisher" name="RadarPublisher" output="screen">
+   </node>
+   <node pkg="extendedkalmanfilters" type="FusionNode" name="FusionNode" output="screen">
    </node>
    <node pkg="extendedkalmanfilters" type="OutputNode" name="OutputNode" output="screen">
    </node>
-   <node type="rviz" name="rviz" pkg="rviz" args="-d /home/krishna/AVMLCodingHere/AvmlEkfWs/src/extendedkalmanfilters/rviz/config_file.rviz" />
+   <node type="rviz" name="rviz" pkg="rviz" args="-d /home/krishna/AVMLCodingHere/CollegeGit/AVMLProject/src/extendedkalmanfilters/rviz/config_file.rviz" />
 
 </launch>

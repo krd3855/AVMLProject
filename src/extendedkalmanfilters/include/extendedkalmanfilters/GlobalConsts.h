@@ -8,12 +8,12 @@
 //    ********* Configuration Begin ********* //
 const int gFrameReset = 0;
 const int gQueueSize = 500;
-const int gPublisherBaudRate  = 10;
+const int gPublisherBaudRate  = 15;
 //    ********* Configuration End ********* //
 // ****************************************************************************** //
 //    ********* Bag File Path Begin ********* //
-#define gLidarNodeFile "/home/krishna/Test/AVMLProject/ROSBagFiles/Lidar.bag"
-#define gRadarNodeFile "/home/krishna/Test/AVMLProject/ROSBagFiles/Radar.bag"
+#define gLidarNodeFile "/home/krishna/AVMLCodingHere/CollegeGit/AVMLProject/ROSBagFiles/Lidar.bag"
+#define gRadarNodeFile "/home/krishna/AVMLCodingHere/CollegeGit/AVMLProject/ROSBagFiles/Radar.bag"
 constexpr char const* DataFile = "../AVMLProject/InputFiles/SensorData.csv";
 //    ********* Bag File Path End ********* //
 // ****************************************************************************** //
