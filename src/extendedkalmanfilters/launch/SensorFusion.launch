@@ -1,6 +1,7 @@
 <launch>
-   <node pkg="extendedkalmanfilters" type="RadarPublisher" name="RadarPublisher" output="screen">
+   <node pkg="extendedkalmanfilters" type="LidarPublisher" name="LidarPublisher" output="screen">
    </node>
+
    <node pkg="extendedkalmanfilters" type="FusionNode" name="FusionNode" output="screen">
    </node>
    <node pkg="extendedkalmanfilters" type="OutputNode" name="OutputNode" output="screen">

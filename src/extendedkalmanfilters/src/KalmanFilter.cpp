@@ -1,4 +1,5 @@
 #include "extendedkalmanfilters/KalmanFilter.h"
+#include <iostream>
 
 using Eigen::MatrixXd;
 using Eigen::VectorXd;
@@ -13,6 +14,8 @@ void KalmanFilter::initialize(VectorXd &Xin, MatrixXd &Pin, MatrixXd &Fin,
   R_ = RIn;
   R_radar_ = Rradar;
   Q_ = Qin;
+  std::cout << Fin << std::endl;
+  std::cout << F_ << std::endl;
 }
 
 void KalmanFilter::predict() {

@@ -7,11 +7,11 @@ ExtendedKF::ExtendedKF() {
   R_radar_ = MatrixXd(3, 3);
   H_laser_ = MatrixXd(2, 4);
   Hj_ = MatrixXd(3, 4);
-
+  
   R_laser_ << 0.0255, 0,
               0, 0.0255;
 
-  R_radar_ << 0.09, 0, 0,                             //Trail number - 45
+  R_radar_ << 0.09, 0, 0,                             //Trail number - 15
               0, 0.0009, 0,
               0, 0, 0.09;
 
@@ -29,6 +29,7 @@ void ExtendedKF::processMeasurement(const Helper& helperObject) {
   			    0,0,1000,0,
   			    0,0,0,1000;
   	MatrixXd F_in = MatrixXd(4,4);
+    
     MatrixXd Q_in = MatrixXd(4, 4);
     if (helperObject.sensorType_ == Helper::RADAR) {                            // Checking for Sensor Type
       VectorXd xIn = kf_.X_;
